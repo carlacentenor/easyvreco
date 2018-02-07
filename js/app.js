@@ -4,12 +4,13 @@ let maps = document.getElementById('map');
 let origin = document.getElementById('origin');
 let destiny = document.getElementById('destiny');
 let placeSearch, autocomplete;
-
+let iconBase = 'assets/images/bicicleta.png';
 btnSearch.addEventListener('click', searchPosition);
 
 function initMap() {
   let directionsService = new google.maps.DirectionsService;
   let directionsDisplay = new google.maps.DirectionsRenderer;
+  
   initAutocomplete();
   
   let pos = {
@@ -23,9 +24,9 @@ function initMap() {
   let marker = new google.maps.Marker({
     position: pos,
     map: map,
-    // animaciones en marcadores
-    // label : 'A',
-    title: 'Estoy aqui',
+    icon: iconBase,
+   
+    
     animation: google.maps.Animation.DROP,
 
   });
@@ -81,7 +82,9 @@ function searchPosition() {
       let marker = new google.maps.Marker({
         position: myPosition,
         map: map,
-
+        icon: iconBase,
+        title: 'Estoy aqui',
+        animation: google.maps.Animation.DROP,
 
       });
       directionsDisplay.setMap(map);
