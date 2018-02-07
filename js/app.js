@@ -8,8 +8,8 @@ let placeSearch, autocomplete;
 btnSearch.addEventListener('click', searchPosition);
 
 function initMap() {
-  var directionsService = new google.maps.DirectionsService;
-  var directionsDisplay = new google.maps.DirectionsRenderer;
+  let directionsService = new google.maps.DirectionsService;
+  let directionsDisplay = new google.maps.DirectionsRenderer;
   initAutocomplete();
   
   let pos = {
@@ -31,7 +31,7 @@ function initMap() {
   });
 
   directionsDisplay.setMap(map);
-  var onChangeHandler = function() {
+  const onChangeHandler = ()=> {
     calculateAndDisplayRoute(directionsService, directionsDisplay);
   };
   btnRoute.addEventListener('click', onChangeHandler);
@@ -58,11 +58,17 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   });
 }
 
+function clearInput() {
+  origin.value = '';
+  destiny.value = '';
+}
 
-function searchPosition() {
+
+function searchPosition() { 
+  clearInput();
   if (navigator.geolocation) {
-    var directionsService = new google.maps.DirectionsService;
-    var directionsDisplay = new google.maps.DirectionsRenderer;
+    let directionsService = new google.maps.DirectionsService;
+    let directionsDisplay = new google.maps.DirectionsRenderer;
     navigator.geolocation.getCurrentPosition((position) => {
       let myPosition = {
         lat: position.coords.latitude,
@@ -79,7 +85,7 @@ function searchPosition() {
 
       });
       directionsDisplay.setMap(map);
-      var onChangeHandler = function() {
+      const onChangeHandler = ()=> {
         calculateAndDisplayRoute(directionsService, directionsDisplay);
       };
       btnRoute.addEventListener('click', onChangeHandler);
@@ -88,3 +94,4 @@ function searchPosition() {
     console.log('Su navegador no soporta Geolocalización');
   }
 }
+
