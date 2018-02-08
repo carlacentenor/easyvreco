@@ -1,4 +1,58 @@
+* {
+  font-family: "Dosis", sans-serif;
+}
+
+body {
+  background: linear-gradient(#f5e0c7, #f8c993, #df8620);
+}
+
+.title {
+  font-weight: 900;
+  color: #f8f8f8;
+  font-size: 5rem;
+}
+
+.subtitle {
+  color: #fffefe;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 #map {
-    height: 400px;
-    width: 100%;
-   }
+  height: 400px;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.3rem;
+}
+
+.center {
+  text-align: center;
+}
+
+div.pad {
+  padding: 0.3rem;
+}
+
+.btn {
+  background-color: #25757a;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.port {
+    background: url("../assets/images/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -300px;
+}
+
+.inpt {
+    width: 30%;
+    margin: 0.5rem 2rem;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+
+}
