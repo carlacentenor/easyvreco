@@ -38,5 +38,3 @@ Utilizar la geolocalizaci√≥n y la api de goolge maps para elaborar una aplicaci√
 
 * **Carla Centeno:** [GitHub Account](https://github.com/carlacentenor).
 * **Alejandra Cabrera:** [GitHub Account](https://github.com/AlejandraCP).  
-
-Realizado por Carla Centeno y Alejandra Cabrera.
