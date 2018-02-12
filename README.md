@@ -26,12 +26,12 @@ Utilizar la geolocalización y la api de goolge maps para elaborar una aplicaci�
 
 ### Versión desktop
 
-![desktop](assets/images/view-desktop.png);
+![desktop](assets/docs/img1.png);
 
 
 ### Versión Mobile
 
-![desktop](assets/images/view-mobile.png);
+![desktop](assets/docs/img2.png);
 
 
 #### Desarroladoras
