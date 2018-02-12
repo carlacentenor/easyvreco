@@ -49,7 +49,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   directionsService.route({
     origin: origin.value,
     destination: destiny.value,
-    travelMode: 'DRIVING'
+    travelMode: 'WALKING'
   }, function(response, status) {
     if (status === 'OK') {
       directionsDisplay.setDirections(response);

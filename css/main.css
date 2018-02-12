@@ -3,13 +3,25 @@
 }
 
 body {
-  background: linear-gradient(#f5e0c7, #f8c993, #df8620);
+  background-color: white;
 }
 
 .title {
   font-weight: 900;
   color: #f8f8f8;
   font-size: 5rem;
+}
+
+.w20{
+  width: 20em;
+}
+
+.bg-aqua{
+  color: #02ffb3;
+}
+
+.fs-5{
+  font-size: 4em;
 }
 
 .subtitle {
@@ -19,40 +31,60 @@ body {
 }
 
 #map {
-  height: 400px;
+  height: 100vh;
   width: 100%;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
   border-radius: 0.3rem;
 }
 
-.center {
-  text-align: center;
+.btn-aqua {
+  background: transparent;
+  font-weight: 700;
+  border: 2px solid white;
+  color: white;
+  transition: 1s;
 }
 
-div.pad {
-  padding: 0.3rem;
+.btn-aqua:hover{
+  background-color: #02ffb3;
+  border: 2px solid #02ffb3;
+  color: black;
+  font-weight: 900;
 }
 
-.btn {
-  background-color: #25757a;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
+.opacity {
+  background: rgba(0, 0, 0, 0.8);
+  height: inherit;
+  width: 100%;
 }
 
 .port {
-    background: url("../assets/images/portada.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position-y: -300px;
+  background: url("../assets/images/img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.inpt {
-    width: 30%;
-    margin: 0.5rem 2rem;
-    border-radius: 0.3rem;
-    padding: 0.3rem;
+.h100 {
+  height: 100vh;
+}
 
+.font-si-2{
+font-size: 2em;
+}
+
+.white{
+color: white;
+}
+
+.w40{
+  width: 200px;
+}
+
+.line:after,
+.line:before {
+    content: '';
+    width: 45%;
+    height: 1px;
+    background-color: white;
+    display: inline-block;
 }
